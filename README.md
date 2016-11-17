@@ -4,39 +4,39 @@
 
 ##Installation - Python dependencies
 
-#matplotlib
+###matplotlib
 
 ```
-sudo apt-get install python-matplotlib
+apt-get install python-matplotlib
 ```
 
-#scipy
+###scipy
 
 ```
-sudo apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+apt-get install python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 ```
 
-#hunspell
+###hunspell
 
 ```
-~$	sudo apt-get update
-~$	sudo apt-get install python2.7-dev
-~$	sudo apt-get install libhunspell-dev
-~$	sudo pip install hunspell
+~$	apt-get update
+~$	apt-get install python2.7-dev
+~$	apt-get install libhunspell-dev
+~$	pip install hunspell
 ```
 
-#treetagger3
+###treetagger3
 
 http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/
 
-#nltk (needed for treetagger3)
+###nltk (needed for treetagger3)
 
 ```
-~$	sudo pip install -U nltk
-~$	sudo pip install treetaggerwrapper
+~$	pip install -U nltk
+~$	pip install treetaggerwrapper
 ```
 
-#treetagger-python
+###treetagger-python
 
 https://github.com/miotto/treetagger-python
 
@@ -44,10 +44,15 @@ Update `os.environ["TREETAGGER_HOME"]` in characterStats.py
 
 The `./cache folder` needs to be writeable.
 
+###roman
 
-##Examples
+```
+~$	pip install roman
+```
 
-###About File Formats
+https://pypi.python.org/pypi/roman
+
+##About File Formats
 
 For historical reasons, characterStats.py needs books to be plain text, formatted as one chapter per line (all the text of the chapter is on the same line, preceded by the chapter number). To format a book as "1 chapter per line", a handy conversion script is provided: 
 
@@ -57,6 +62,8 @@ python autoformat.py --file="books/madamebovary.txt" --out="books/"
 
 => will output the necessary `madamebovary-compact.txt` file
 
+
+##Examples
 
 ###Graphical Representations
 
